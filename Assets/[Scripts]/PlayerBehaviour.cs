@@ -43,12 +43,13 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Cloud")) {
             print("hit could");
+            other.gameObject.GetComponent<AudioSource>().Play();
         }
 
         if (other.gameObject.CompareTag("Island"))
         {
             print("hit island");
-
+            other.gameObject.GetComponent<AudioSource>().Play();
         }
     }
 
