@@ -12,7 +12,7 @@ public class CloudBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        ResetObject();
     }
 
     // Update is called once per frame
@@ -39,9 +39,9 @@ public class CloudBehaviour : MonoBehaviour
     {
         float randX = Random.Range(boundary.left, boundary.right);
         float randY = Random.Range(boundary.top, boundary.top+3.0f);
-        vericalSpeed = Random.Range(speeds.bottom, boundary.top );
-        horizontalSpeed = Random.Range(speeds.left, boundary.right);
+        vericalSpeed = Random.Range(speeds.bottom, speeds.top );
+        horizontalSpeed = Random.Range(speeds.left, speeds.right);
 
-        transform.position = new Vector2(randY,randX);
+        transform.position = new Vector2(randX, randY);
     }
 }

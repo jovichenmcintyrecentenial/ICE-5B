@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6588069874476612531}
   m_Layer: 0
   m_Name: cloud
-  m_TagString: Untagged
+  m_TagString: Cloud
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4145538892503221474
 SpriteRenderer:
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2f523af38da76442681c76544485c6f9, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.8235294}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5529412}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -98,13 +98,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec8ea7ac7ff84a9b8168f2314059a97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vericalSpeed: 0
-  horizontalSpeed: 0
+  vericalSpeed: 0.05
+  horizontalSpeed: 0.05
   boundary:
-    top: -6
-    right: -1.7
+    top: 7.48
+    right: 1.7
     bottom: -6
-    left: 1.7
+    left: -1.7
   speeds:
     top: 0.1
     right: 0.02
