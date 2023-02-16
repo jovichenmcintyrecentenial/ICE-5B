@@ -39,5 +39,19 @@ public class PlayerBehaviour : MonoBehaviour
     }
 
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Cloud")) {
+            print("hit could");
+        }
+
+        if (other.gameObject.CompareTag("Island"))
+        {
+            print("hit island");
+
+        }
+    }
+
+
 
 }
